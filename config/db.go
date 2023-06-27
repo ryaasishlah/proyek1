@@ -18,6 +18,11 @@ var DBUlbimariainfo = atdb.DBInfo{
 	DBName:   "db_ulbi",
 }
 
+var DBMongoinfo = atdb.DBInfo{
+	DBString: MongoString,
+	DBName:   "bank",
+}
+
 var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
 
 var Usertables = [4]whatsauth.LoginInfo{mhs, dosen, user, user1}
