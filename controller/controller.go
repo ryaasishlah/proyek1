@@ -4,8 +4,8 @@ import (
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
-	"github.com/ryaasishlah/iyasbackend"
 	"github.com/ryaasishlah/proyek1/config"
+	"github.com/ryaasishlah/ryaasbackend"
 	"github.com/whatsauth/whatsauth"
 )
 
@@ -54,25 +54,25 @@ func Homepage(c *fiber.Ctx) error {
 }
 
 func GetLapangan(c *fiber.Ctx) error {
-	getstatus := iyasbackend.GetDataLapangan("Lapangan A")
+	getstatus := ryaasbackend.GetDataLapangan("Farhan Rizki Maulana")
 	return c.JSON(getstatus)
 }
 
 func GetKategori(c *fiber.Ctx) error {
-	getstatus := iyasbackend.GetDataKategori("Tornament")
+	getstatus := ryaasbackend.GetDataKategori("tournament")
 	return c.JSON(getstatus)
 }
 
 func GetDiskon(c *fiber.Ctx) error {
-	getstatus := iyasbackend.GetDataDiskon("35000")
+	getstatus := ryaasbackend.GetDataDiskon("35000")
 	return c.JSON(getstatus)
 }
 
 func GetBank(c *fiber.Ctx) error {
-	getstatus := iyasbackend.GetDataBank("Microtfon")
+	getstatus := ryaasbackend.GetDataBank("Microtfon")
 	return c.JSON(getstatus)
 }
 func GetKontak(c *fiber.Ctx) error {
-	getstatus := iyasbackend.GetDataKontak("WAWAN")
+	getstatus := ryaasbackend.GetDataKontak("WAWAN")
 	return c.JSON(getstatus)
 }
