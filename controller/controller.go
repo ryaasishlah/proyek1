@@ -73,6 +73,6 @@ func GetBank(c *fiber.Ctx) error {
 	return c.JSON(getstatus)
 }
 func GetKontak(c *fiber.Ctx) error {
-	getstatus := ryaasbackend.GetDataKontak("WAWAN")
+	getstatus := ryaasbackend.GetDataKontak("0821247838192")
 	return c.JSON(getstatus)
 }
