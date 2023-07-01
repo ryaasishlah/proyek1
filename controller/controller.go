@@ -59,7 +59,7 @@ func GetLapangan(c *fiber.Ctx) error {
 }
 
 func GetKategori(c *fiber.Ctx) error {
-	getstatus := ryaasbackend.GetDataKategori("tournament")
+	getstatus := ryaasbackend.GetDataKategori("tournaments")
 	return c.JSON(getstatus)
 }
 
